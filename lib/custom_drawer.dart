@@ -11,10 +11,9 @@ class CustomDrawer extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.all(10.0),
+              padding: const EdgeInsets.all(50.0),
               child: ListTile(
-                leading: Icon(Icons.star),
-                title: Text("Icons"),
+                leading: Center(child: Icon(Icons.star)),
               ),
             ),
 
@@ -25,7 +24,9 @@ class CustomDrawer extends StatelessWidget {
               child: ListTile(
                 leading: Icon(Icons.text_fields),
                 title: Text("TextField"),
-                onTap: (){},
+                onTap: (){
+                  Navigator.pushNamed(context, '/textfieldwid');
+                },
               ),
             ),
 
@@ -36,7 +37,9 @@ class CustomDrawer extends StatelessWidget {
               child: ListTile(
                 leading: Icon(Icons.rowing),
                 title: Text("Rows&Columns"),
-                onTap: (){},
+                onTap: (){
+                  Navigator.pushNamed(context, '/column_and_row');
+                },
               ),
             ),
 
@@ -45,7 +48,9 @@ class CustomDrawer extends StatelessWidget {
               child: ListTile(
                 leading: Icon(Icons.format_quote),
                 title: Text("Form"),
-                onTap: (){},
+                onTap: (){
+                  Navigator.pushNamed(context, '/form');
+                },
               ),
             ),
 
@@ -54,7 +59,9 @@ class CustomDrawer extends StatelessWidget {
               child: ListTile(
                 leading: Icon(Icons.stacked_bar_chart),
                 title: Text("Stack"),
-                onTap: (){},
+                onTap: (){
+                  Navigator.pushNamed(context, '/stack');
+                },
               ),
             ),
 
@@ -63,7 +70,9 @@ class CustomDrawer extends StatelessWidget {
               child: ListTile(
                 leading: Icon(Icons.image),
                 title: Text("Image"),
-                onTap: (){},
+                onTap: (){
+                  Navigator.pushNamed(context, '/myimage');
+                },
               ),
             ),
 
